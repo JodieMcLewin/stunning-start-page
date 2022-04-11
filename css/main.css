@@ -2,11 +2,135 @@ html {
   box-sizing: border-box;
   font-family: "Georgia", serif;
   line-height: 1.5;
-  background-color: #afafaf;
+  background-color: #bebebe;
 }
 
 *
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 10rem auto;
+  grid-template-rows: auto 1.5rem;
+  grid-template-areas:
+    "left center right"
+    ". center .";
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  grid-area:  center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #323232;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #bd027d;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+p {
+  padding: 1.5rem;
+  font-size: 1.125rem;
+  color: #323232;
+}
+
+img {
+  width: 100%;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+}
+
+section li {
+  margin: 1.5rem;
+  padding: 0;
+  background-color: #ccc;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+    gap: 1rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 1.125rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #323232;
+  background-color: #bebebe;
+  font-size: 1.25rem;
+  order: 1;
+}
+
+li a {
+  margin: .5rem;
+  padding: .8rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #fff;
+  background-color: #bd027d;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border: 2px solid #960062;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div strong {
+  color: #323232;
+  font-style: italic;
+  text-align: right;
+  order: 1;
+  font-weight: lighter;
+}
+
+div {
+  background-color: #bebebe;
+  margin: 0;
+  padding: .5rem;
+  border-radius: 1rem 0;
+  display : flex;
+  justify-content: flex-end;
+}
+
+section div img {
+  margin-right: .5em;
+  width: 1rem;
 }
