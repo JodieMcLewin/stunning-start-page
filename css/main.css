@@ -122,13 +122,12 @@ div strong {
 }
 
 div {
-  background-color: rgba (0,0,0,.1);
+  background-color: rgba(0,0,0,.1);
   margin: 0;
   padding: .5rem;
   border-radius: 1rem 0;
   display: flex;
   justify-self: end;
-  align-items:
 }
 
 section div img {
